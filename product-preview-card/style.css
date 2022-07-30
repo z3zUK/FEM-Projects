@@ -77,9 +77,9 @@ h1 {
   color: var(--neutral-dark);
   font-size: var(--accent-text-size);
   font-weight: var(--font-weight-bold);
-  line-height: 1.75rem;
+  line-height: 1.8rem;
   padding-top: 0.5714rem;
-  letter-spacing: 2px;
+  letter-spacing: 0;
 }
 
 button {
@@ -156,6 +156,7 @@ p.product-description {
   font-size: var(--default-font-size);
   line-height: 1.28571rem;
   padding: 1rem 0 0.5rem 0;
+  max-width: 16rem;
 }
 
 p.price {
@@ -166,7 +167,6 @@ p.price {
   display: flex;
   align-items: center;
   padding: 0.64287rem 0 0.92857rem 0;
-  letter-spacing: 2px;
 }
 
 s {
@@ -228,6 +228,7 @@ s {
 
   h1 {
     padding-top: 1rem;
+    letter-spacing: 1px;
   }
 
   p.product-description {
