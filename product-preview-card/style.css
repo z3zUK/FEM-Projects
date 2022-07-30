@@ -1,0 +1,240 @@
+/* CSS RESET
+=================================================================
+*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* CUSTOM PROPERTIES
+=================================================================
+*/
+:root {
+  --primary: hsl(158, 36%, 37%);
+  --background: hsl(30, 38%, 92%);
+  --neutral-dark: hsl(212, 21%, 14%);
+  --neutral-mid: hsl(228, 12%, 48%);
+  --neutral-light: hsl(0, 0%, 100%);
+  --body-text: "Montserrat", sans-serif;
+  --accent-text: "Fraunces", serif;
+  --font-weight-normal: 500;
+  --font-weight-bold: 700;
+  --default-font-size: 14px;
+  --accent-text-size: 1.8571rem;
+}
+
+/* GLOBAL STYLES
+=================================================================
+*/
+body {
+  font-family: var(--body-text);
+  font-size: var(--default-font-size);
+  color: var(--neutral-mid);
+  background-color: var(--background);
+  font-weight: var(--font-weight-normal);
+}
+
+p {
+  line-height: 1.5rem;
+  padding-top: 1rem;
+  max-width: 40ch;
+}
+
+h1 {
+  font-family: var(--accent-text);
+  color: var(--neutral-dark);
+  font-size: var(--accent-text-size);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.75rem;
+  padding-top: 0.5714rem;
+  letter-spacing: 2px;
+}
+
+button {
+  background-color: var(--primary);
+  color: var(--neutral-light);
+  font-weight: var(--font-weight-bold);
+  border-radius: var(--default-font-size);
+  text-align: center;
+  width: 100%;
+  padding: 0.89285em 2em;
+  border: none;
+  font-size: 0.78571rem;
+}
+
+.button-icon {
+  vertical-align: middle;
+  margin-right: 1em;
+}
+
+/* CARD STYLES
+=================================================================
+*/
+.card {
+  /* this centres the card on the page */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1.5714rem 0.5rem;
+}
+
+.card-wrapper {
+  /* grid layout for the card */
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(auto, 342px)
+    minmax(0, 1fr);
+  grid-template-areas:
+    ". card-image   ."
+    ". card-content ."
+    ". attribution  .";
+}
+
+.card-wrapper picture {
+  /* the card image  */
+  grid-area: card-image;
+  border-top-right-radius: 0.715rem;
+  border-top-left-radius: 0.715rem;
+  overflow: hidden;
+  object-fit: cover;
+  line-height: 0;
+}
+
+.card-content {
+  /* title/description/price/button area */
+  grid-area: card-content;
+  background-color: var(--neutral-light);
+  border-bottom-right-radius: var(--default-font-size);
+  border-bottom-left-radius: var(--default-font-size);
+  overflow: hidden;
+  padding: 1.2rem 1.2rem 1.4rem 1.2rem;
+}
+
+p.category {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding-top: 0;
+  line-height: 1rem;
+}
+
+p.product-description {
+  font-size: var(--default-font-size);
+  line-height: 1.28571rem;
+  padding: 1rem 0 0.5rem 0;
+}
+
+p.price {
+  color: var(--primary);
+  font-family: var(--accent-text);
+  font-size: var(--accent-text-size);
+  font-weight: var(--font-weight-bold);
+  display: flex;
+  align-items: center;
+  padding: 0.64287rem 0 0.92857rem 0;
+  letter-spacing: 2px;
+}
+
+s {
+  font-family: var(--body-text);
+  color: var(--neutral-mid);
+  font-size: var(--default-font-size);
+  font-weight: var(--font-weight-normal);
+  padding-left: 0.92857rem;
+  line-height: 2rem;
+}
+
+/* ATTRIBUTION
+=================================================================
+*/
+.attribution {
+  grid-area: attribution;
+  font-size: 11px;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* MEDIA QUERIES
+=================================================================
+*/
+@media (min-width: 651px) {
+  .card-wrapper {
+    display: grid;
+    grid-template-columns:
+      minmax(1rem, 1fr)
+      300px
+      300px
+      minmax(1rem, 1fr);
+    grid-template-areas:
+      ". card-image card-content   ."
+      ". attribution attribution   .";
+  }
+
+  .card-wrapper picture {
+    border-top-left-radius: var(--default-font-size);
+    border-bottom-left-radius: var(--default-font-size);
+    border-top-right-radius: unset;
+  }
+
+  .card-wrapper picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card-content {
+    border-bottom-left-radius: unset;
+    border-top-right-radius: var(--default-font-size);
+    border-bottom-right-radius: var(--default-font-size);
+    padding: 1.715rem 1.75rem;
+  }
+
+  h1 {
+    padding-top: 1rem;
+  }
+
+  p.product-description {
+    padding-top: 1.4285rem;
+  }
+
+  p.price {
+    padding: 0.85714rem 0 1.5rem 0;
+  }
+}
