@@ -1,0 +1,232 @@
+/* CSS RESET
+=================================================================
+*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* CUSTOM PROPERTIES
+  =================================================================
+  */
+:root {
+  --primary-background: hsl(233, 47%, 7%);
+  --primary-card-background: hsl(244, 38%, 16%);
+  --primary-accent: hsl(277, 64%, 61%);
+  --neutral-light: hsl(0, 0%, 100%);
+  --neutral-light-body-text: hsla(0, 0%, 100%, 0.75);
+  --neutral-light-headings: hsla(0, 0%, 100%, 0.6);
+  --body-text: "Inter", sans-serif;
+  --accent-text: "Lexend Deca", serif;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --default-font-size: 15px;
+}
+
+/* GLOBAL STYLES
+  =================================================================
+  */
+html {
+  font-size: var(--default-font-size);
+}
+
+body {
+  font-family: var(--body-text);
+  color: var(--neutral-light-body-text);
+  background-color: var(--primary-background);
+  font-weight: var(--font-weight-normal);
+}
+
+/* TYPOGRAPHY
+  =================================================================
+  */
+
+h1 {
+  font-weight: var(--font-weight-bold);
+  font-family: var(--body-text);
+  font-size: 1.8rem;
+  color: var(--neutral-light);
+  word-spacing: 0.2rem;
+}
+
+h1 span {
+  color: var(--primary-accent);
+}
+
+/* CARD LAYOUT
+  =================================================================
+  */
+article {
+  display: grid;
+  place-content: center;
+  margin-inline: auto;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "card-image"
+    "card-content";
+  align-items: center;
+  background-color: var(--primary-card-background);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card-image {
+  grid-area: card-image;
+  background-color: var(--primary-accent);
+  object-fit: cover;
+  line-height: 0;
+}
+
+.card-image img {
+  mix-blend-mode: multiply;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.card-content {
+  grid-area: card-content;
+  padding: 2.6rem 2rem;
+}
+
+.card-content p {
+  padding-top: 0.9rem;
+  line-height: 1.65rem;
+  margin-bottom: 2.75rem;
+}
+
+.card-content li {
+  text-transform: uppercase;
+  padding-bottom: 1.95rem;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.card-content li:last-child {
+  padding-bottom: 0;
+}
+
+.card-content ul li span {
+  display: block;
+  font-weight: var(--font-weight-bold);
+  color: var(--neutral-light);
+  font-size: 1.6rem;
+  text-transform: initial;
+  padding-bottom: 0.45rem;
+}
+
+/* ATTRIBUTION (from Frontend mentor)
+  =================================================================
+  */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* MEDIA QUERIES
+  =================================================================
+  */
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 2.1rem;
+    word-spacing: 0.2rem;
+  }
+
+  .card-wrapper {
+    display: grid;
+    grid-template-columns: 51.5% 48.5%;
+    grid-template-areas: "card-content card-image";
+    max-width: 1000px;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-image img {
+    object-fit: cover;
+    max-height: initial;
+  }
+
+  .card-content {
+    text-align: left;
+    padding: 4.3rem 4.3rem 3.75rem 4.3rem;
+  }
+
+  .card-content p {
+    padding-top: 1.55rem;
+    line-height: 1.5rem;
+    margin-bottom: 4.25rem;
+    font-size: 0.9rem;
+    max-width: 40ch;
+  }
+
+  .card-content ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: 35ch;
+  }
+
+  .card-content li {
+    display: inline;
+    padding-bottom: 0;
+    padding-right: 1rem;
+  }
+
+  .card-content ul li span {
+    display: block;
+    font-weight: var(--font-weight-bold);
+    color: var(--neutral-light);
+    font-size: 1.5rem;
+    text-transform: initial;
+    padding-bottom: 0.4rem;
+
+  }
