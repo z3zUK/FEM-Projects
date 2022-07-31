@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Git Hub Repository](https://your-solution-url.com)
+- Solution URL: [Git Hub Repository](https://github.com/z3zUK/FEM-Projects/tree/main/FEM-Four-card-feature-section)
 - Live Site URL: [Git Hub Pages Link](https://z3zuk.github.io/FEM-Projects/FEM-Four-card-feature-section/index.html)
 
 ### Built with
