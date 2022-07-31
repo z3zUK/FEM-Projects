@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/z3zUK/FEM-Projects/tree/main/FEM-Stats-Preview-Card-Component)
-- Live Site URL: [Add live site URL here](https://z3zuk.github.io/FEM-Projects/FEM-Stats-Preview-Card-Component/index.html)
+- Solution URL: [GitHub Repository](https://github.com/z3zUK/FEM-Projects/tree/main/FEM-Stats-Preview-Card-Component)
+- Live Site URL: [GitHub Pages link](https://z3zuk.github.io/FEM-Projects/FEM-Stats-Preview-Card-Component/index.html)
 
 ### Built with
 
