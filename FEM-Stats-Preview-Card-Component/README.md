@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/z3zUK/FEM-Projects/tree/main/FEM-Stats-Preview-Card-Component)
+- Live Site URL: [Add live site URL here](https://z3zuk.github.io/FEM-Projects/FEM-Stats-Preview-Card-Component/index.html)
 
 ### Built with
 
@@ -37,7 +37,7 @@ Users should be able to:
 
 ### What I learned
 
-I had already done another card mockup, so this one was fairly easy, as the main elements were broadly similar. Hardest part is getting the alignment as close as possible to the original design.
+I had already done another card mockup, so this one was fairly easy, as the main elements were broadly similar. Hardest part is getting the alignment as close as possible to the original design. Took me a little while to figure out which blend mode/opacity level to use for the main image!
 
 ### Continued development
 
