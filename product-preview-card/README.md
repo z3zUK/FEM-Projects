@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Repository](https://github.com/z3zUK/FEM-Projects/tree/main/product-preview-card
+- Live Site URL: [GitHub Pages link](https://z3zuk.github.io/FEM-Projects/product-preview-card/index.html)
 
 ### What I learned
 
