@@ -20,12 +20,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](screenshot.png)
+![](Screenshot-desktop.png)
 
 ### Links
 
-- Solution URL: [Git Hub Repository](https://your-solution-url.com)
-- Live Site URL: [Live Site URL](https://your-live-site-url.com)
+- Solution URL: [Git Hub Repository](https://github.com/z3zUK/FEM-Projects/tree/main/sunnyside-agency-landing-page-main)
+- Live Site URL: [Live Site URL](https://z3zuk.github.io/FEM-Projects/sunnyside-agency-landing-page-main/index.html)
 
 ### Built with
 
