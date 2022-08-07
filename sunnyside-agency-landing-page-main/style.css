@@ -309,7 +309,7 @@ section.intro h3 {
 }
 
 .intro-3 {
-  background-image: url(/images/mobile/image-stand-out.jpg);
+  background-image: url(images/mobile/image-stand-out.jpg);
   width: 100%;
   aspect-ratio: 125 / 104;
 }
@@ -334,7 +334,7 @@ section.intro h3 {
 }
 
 .intro-6 {
-  background-image: url(/images/mobile/image-photography.jpg);
+  background-image: url(images/mobile/image-photography.jpg);
 }
 
 .intro-5 h3,
@@ -423,16 +423,16 @@ section.client-testimonials {
 }
 
 .banner1 {
-  background-image: url(/images/mobile/image-gallery-milkbottles.jpg);
+  background-image: url(images/mobile/image-gallery-milkbottles.jpg);
 }
 .banner2 {
-  background-image: url(/images/mobile/image-gallery-orange.jpg);
+  background-image: url(images/mobile/image-gallery-orange.jpg);
 }
 .banner3 {
-  background-image: url(/images/mobile/image-gallery-cone.jpg);
+  background-image: url(images/mobile/image-gallery-cone.jpg);
 }
 .banner4 {
-  background-image: url(/images/mobile/image-gallery-sugar-cubes.jpg);
+  background-image: url(images/mobile/image-gallery-sugar-cubes.jpg);
 }
 
 /* FOOTER
@@ -760,16 +760,16 @@ footer a:focus {
   }
 
   .banner1 {
-    background-image: url(/images/desktop/image-gallery-milkbottles.jpg);
+    background-image: url(images/desktop/image-gallery-milkbottles.jpg);
   }
   .banner2 {
-    background-image: url(/images/desktop/image-gallery-orange.jpg);
+    background-image: url(images/desktop/image-gallery-orange.jpg);
   }
   .banner3 {
-    background-image: url(/images/desktop/image-gallery-cone.jpg);
+    background-image: url(images/desktop/image-gallery-cone.jpg);
   }
   .banner4 {
-    background-image: url(/images/desktop/image-gallery-sugarcubes.jpg);
+    background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
   }
 
   /* FOOTER =============================*/
