@@ -1,0 +1,297 @@
+/* CSS RESET
+=================================================================
+*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* CUSTOM PROPERTIES
+=================================================================
+*/
+:root {
+  --card-bg: hsl(236, 72%, 79%), hsl(237, 63%, 64%);
+  --bg: hsl(240, 78%, 98%);
+  --light: hsl(234, 14%, 74%);
+  --mid: hsl(233, 13%, 49%);
+  --dark: hsl(232, 13%, 33%);
+  --default-text: "Montserrat", sans-serif;
+  --fw700: 700;
+  --default-font-size: 15px;
+}
+
+/* GLOBAL STYLES
+=================================================================
+*/
+html {
+  font-size: var(--default-font-size);
+}
+
+body {
+  font-family: var(--default-text);
+  color: var(--mid);
+  background-color: var(--bg);
+  background-image: url(images/bg-top.svg);
+  background-position: top -2rem right -13.25rem;
+  background-repeat: no-repeat;
+  font-weight: var(--fw700);
+  padding: 4.25rem 1.5rem;
+}
+
+main {
+  margin-inline: auto;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  color: #fff;
+  background-image: linear-gradient(150deg, var(--card-bg));
+  text-transform: uppercase;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 0.5rem;
+  font-weight: var(--fw700);
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+.btn-light {
+  background-color: #fff;
+  background-image: initial;
+  color: hsl(228, 45%, 44%);
+}
+
+button:hover {
+  background-color: transparent;
+  background-image: none;
+  color: hsl(228, 45%, 44%);
+  outline: 1px solid hsl(228, 45%, 44%);
+  cursor: pointer;
+}
+
+.btn-light:hover {
+  background-image: none;
+  background-color: transparent;
+  color: #fff;
+  outline: 1px solid #fff;
+}
+
+/* TYPOGRAPHY
+=================================================================
+*/
+
+h1 {
+  font-size: 2.15rem;
+  padding-bottom: 2.6rem;
+}
+
+/* card title */
+h2 {
+  padding-top: 2.15rem;
+  font-size: 1.25rem;
+}
+
+/* PRICE CARDS
+=================================================================
+*/
+.price-card {
+  width: 100%;
+  max-width: 350px;
+  margin-inline: auto;
+  margin-block: 1rem 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.card-highlighted {
+  color: #fff;
+  background-image: linear-gradient(150deg, var(--card-bg));
+  border-bottom: 1px solid #fff;
+}
+
+.price-card ul li {
+  margin: 1.1rem 2rem;
+  padding: 0 0 1.1rem 0;
+  border-bottom: 1px solid var(--light);
+}
+
+/* pricing type */
+.price-card ul li:first-child {
+  border-bottom: none;
+  font-size: 1.25rem;
+  padding: 1px 0 2px 0;
+}
+
+/* learn more button */
+.price-card ul li:last-child {
+  border-bottom: none;
+}
+
+.card-highlighted li:last-child {
+  padding: 0 0 0 0;
+}
+
+/* price */
+.price-card ul li:nth-child(2) {
+  font-size: 4.75rem;
+  letter-spacing: -2px;
+  padding: 0 0 1.6rem 0;
+}
+
+.monthly,
+.annually {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* dollar sign in price */
+.price-card ul li span {
+  font-size: 2.5rem;
+  padding-right: 3px;
+}
+
+.price-card ul li button {
+  margin: 1rem 0;
+}
+
+/* TOGGLE BUTTON
+=================================================================
+*/
+.price-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 1rem 4.2rem 1rem;
+  max-width: 350px;
+  margin-inline: auto;
+  color: var(--light);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 58px;
+  height: 33px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(150deg, var(--card-bg));
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:hover {
+  opacity: 0.5;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 25px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider:before {
+  transform: translateX(25px);
+}
+
+/* ATTRIBUTION
+=================================================================
+*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* MEDIA QUERIES - DESKTOP DESIGN
+=================================================================
+*/
+@media (min-width: 1100px) {
+  body {
+    background-image: url(images/bg-top.svg), url(images/bg-bottom.svg);
+    background-position: top right, bottom left;
+    background-repeat: no-repeat;
+    padding: 4.65rem 1.5rem 1.5rem 1.5rem;
+    min-height: 100vh;
+  }
+
+  .price-toggle {
+    padding: 0.2rem 1rem 4.8rem 1rem;
+  }
+
+  .card-wrapper {
+    display: flex;
+    justify-content: center;
+    max-width: 1050px;
+    margin-inline: auto;
+  }
+
+  .price-card ul li {
+    margin: 1.1rem 2rem 0 2rem;
+  }
+
+  /* card title */
+  h2 {
+    padding-top: 1rem;
+  }
+
+  .card-highlighted {
+    margin-top: -0.75rem;
+    margin-bottom: 0.75rem;
+    padding: 1.75rem 0 1.75rem 0;
+  }
+}
