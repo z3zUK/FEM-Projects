@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://z3zuk.github.io/FEM-Projects/FEM-Pricing-component-with-toggle/index.html)
+- Live Site URL: [Add live site URL here](https://github.com/z3zUK/FEM-Projects/tree/main/FEM-Pricing-component-with-toggle)
 
 ### Built with
 
